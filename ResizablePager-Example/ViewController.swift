@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         pagerView.verticalMargin = 120
         pagerView.viewMargin = 30
         
+        pagerView.delegate = self
         pagerView.dataSource = self
     }
 }
@@ -45,5 +46,12 @@ extension ViewController: ResizablePagerViewDataSource {
         view.configure(with: contents[index])
         return view
     }
-    
+}
+
+// MARK: - ResizablePagerViewDelegate
+extension ViewController: ResizablePagerViewDelegate {
+
+    func resizablePagerView(_ resizablePagerView: ResizablePagerView, didSelectAt index: Int) {
+        print(index)
+    }
 }

@@ -28,6 +28,8 @@ public class ResizablePagerView: UIView {
         }
     }
     
+    public weak var delegate: ResizablePagerViewDelegate?
+    
     private var adjustedMargin = CGFloat(0)
     private weak var scrollView: UIScrollView!
     
@@ -53,7 +55,10 @@ public class ResizablePagerView: UIView {
     override public func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         
         if point.y >= scrollView.frame.origin.y && point.y <= scrollView.frame.origin.y + scrollView.frame.height {
-            return scrollView
+            
+            if !scrollView.frame.contains(point) {
+                return scrollView
+            }
         }
 
         return super.hitTest(point, with: event)
@@ -86,11 +91,17 @@ public class ResizablePagerView: UIView {
         
         for idx in 0..<numberOfItems {
             let view = dataSource.resizablePagerView(self, viewForAtIndex: idx)
+            view.isUserInteractionEnabled = true
             view.index = idx
+            view.addGestureRecognizer(IndexableTapGestureRecognizer(target: self, action: #selector(didSelect), index: idx))
             scrollView.addSubview(view)
         }
         
         layoutSubviews()
+    }
+    
+    @objc private func didSelect(recognizer: IndexableTapGestureRecognizer) {
+        delegate?.resizablePagerView(self, didSelectAt: recognizer.index)
     }
     
     // MARK: - Layout

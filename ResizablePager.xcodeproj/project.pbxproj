@@ -21,6 +21,8 @@
 		A191936A1E7EBA4500BDEB0F /* ResizablePagerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19193691E7EBA4500BDEB0F /* ResizablePagerViewDataSource.swift */; };
 		A191936C1E7EDD7F00BDEB0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191936B1E7EDD7F00BDEB0F /* ContentView.swift */; };
 		A191936E1E7EDD9900BDEB0F /* ContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A191936D1E7EDD9900BDEB0F /* ContentView.xib */; };
+		A19193711E7EE0DF00BDEB0F /* ResizablePagerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191936F1E7EE0DC00BDEB0F /* ResizablePagerViewDelegate.swift */; };
+		A19193731E7EE22800BDEB0F /* IndexableTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19193721E7EE22700BDEB0F /* IndexableTapGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		A19193691E7EBA4500BDEB0F /* ResizablePagerViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizablePagerViewDataSource.swift; sourceTree = "<group>"; };
 		A191936B1E7EDD7F00BDEB0F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A191936D1E7EDD9900BDEB0F /* ContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentView.xib; sourceTree = "<group>"; };
+		A191936F1E7EE0DC00BDEB0F /* ResizablePagerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizablePagerViewDelegate.swift; sourceTree = "<group>"; };
+		A19193721E7EE22700BDEB0F /* IndexableTapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexableTapGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 				A19193651E7E407D00BDEB0F /* ResizablePagerView.swift */,
 				A19193671E7EB49100BDEB0F /* ResizableView.swift */,
 				A19193691E7EBA4500BDEB0F /* ResizablePagerViewDataSource.swift */,
+				A191936F1E7EE0DC00BDEB0F /* ResizablePagerViewDelegate.swift */,
+				A19193721E7EE22700BDEB0F /* IndexableTapGestureRecognizer.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			files = (
 				A19193681E7EB49100BDEB0F /* ResizableView.swift in Sources */,
 				A19193661E7E407D00BDEB0F /* ResizablePagerView.swift in Sources */,
+				A19193711E7EE0DF00BDEB0F /* ResizablePagerViewDelegate.swift in Sources */,
+				A19193731E7EE22800BDEB0F /* IndexableTapGestureRecognizer.swift in Sources */,
 				A191936A1E7EBA4500BDEB0F /* ResizablePagerViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
