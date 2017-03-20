@@ -100,6 +100,11 @@ ResizablePagerViewDataSource provides information on the actual content to be pa
 
 ResizablePagerViewDelegate handles content interaction.
 
+## Future Improvements
+
+- Infinite Scroll
+- Reuse Logic
+
 ## Author
 
 [rb_de0](https://twitter.com/rb_de0), rebirth.de0@gmail.com
