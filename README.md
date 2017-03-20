@@ -25,7 +25,7 @@ github "rb-de0/ResizablePager"
 
 ## Usage
 
-```
+```Swift
 import UIKit
 import ResizablePager
 
