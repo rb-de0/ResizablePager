@@ -44,6 +44,7 @@ extension ViewController: ResizablePagerViewDataSource {
     func resizablePagerView(_ resizablePagerView: ResizablePagerView, viewForAtIndex index: Int) -> ResizableView {
         let view = UINib(nibName: "ContentView", bundle: nil).instantiate(withOwner: nil, options: nil).first as! ContentView
         view.configure(with: contents[index])
+        view.backgroundColor = .gray
         return view
     }
 }
