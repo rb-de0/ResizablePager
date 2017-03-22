@@ -23,6 +23,14 @@ ResizablePager is provide resizable views, and it will paging.
 github "rb-de0/ResizablePager"
 ```
 
+### CocoaPods
+
+ResizablePager is available through CocoaPods. To install it, simply add the following line to your Podfile:
+
+```
+pod 'ResizablePager'
+```
+
 ## Usage
 
 ```Swift
